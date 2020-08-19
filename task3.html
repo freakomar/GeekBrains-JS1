@@ -1,0 +1,65 @@
+<script>
+    //Задание 1
+    const showSimple = (x) => {
+    if (x < 2) {
+        return;
+  }
+    else if (x <= 3) {
+    console.log(x);
+  }
+    else {
+            for (let i = 2; i <= (x / 2); i++)
+                if (x % i === 0) {
+                    return;
+    }
+                else {
+                    console.log(x);
+                    return;
+    }
+  }  
+}
+
+    for (let i = 1; i <= 100; i++) {
+  showSimple(i);
+}
+    
+    //Задание 3
+        const basket = [
+        {
+            title: 'dress',
+            price: 250,
+            count: 3
+        },
+        {
+            title: 'jeans',
+            price: 200,
+            count: 5
+        },
+        {
+            title: 'shirt',
+            price: 100,
+            count: 2
+        }
+    ];
+
+    const countBasketPrice = (arr) => {
+        let sum = 0;
+        arr.forEach(function(item) {
+            sum += (item.price * item.count);
+        });
+    return sum;
+};
+
+countBasketPrice(basket);
+    
+    
+    //Задание 4.1
+    for (let i = 0; i <= 9; console.log(i++)) {};
+    
+    //Задание 4.2
+    let x = '';
+    for (let i = 1; i <= 20; i++) {
+        x += 'x'
+        console.log(x);
+}
+</script>
