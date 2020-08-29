@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   /*Задание 1*/
+    <script>
+        let object = {};
+        const convert = (number) => {
+            if (number < 0 || number > 999) {
+                let object = {};/*
+                    units: 0,
+                    tens: 0,
+                    hundreds: 0
+                };*/
+                console.log("неверное число");
+                }
+            else {
+                let arr = String(number).split("");
+                    if (arr.length == 1) {
+                        object.units = arr[0];
+                    }
+                    if (arr.length == 2) {
+                        object.tens = arr[0];
+                        object.units = arr[1];
+                    }
+                    if (arr.length == 3) {
+                        object.hundreds = arr[0];
+                        object.tens = arr[1];
+                        object.units = arr[2];
+                    }
+            }
+            console.log(object);
+        }
+    </script>
+</body>
+</html>
