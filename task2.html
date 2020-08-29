@@ -48,6 +48,9 @@
         return a * b;
     }
     const div = (a,b) => {
+        if (b === 0) {
+            return 'incorrect b';
+        }
         return a / b;
     }
     
