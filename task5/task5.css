@@ -1,0 +1,48 @@
+table {
+    width: 500px;
+    height: 500px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    margin: 50px auto;
+}
+
+tr {
+    height: 10%;
+}
+
+td {
+    width: 10%;
+    text-align: center;
+}
+
+.black {
+    background-color: darkred;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.white {
+    background-color: burlywood;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.blackFigure {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+.whiteFigure {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
