@@ -3,7 +3,9 @@ const changeImg = (e) => {
     let source = e.target.getAttribute("src");
     let newSource = source.replace("Small","Big");
     elem.setAttribute("src", newSource);
-    //window.onerror = alert("error");
+    elem.onerror = function(){
+        alert("error");
+    }
 }
 
 let images = document.querySelectorAll(".smallImage");

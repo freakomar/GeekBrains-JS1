@@ -50,3 +50,4 @@ items.forEach(function(item, i) {
         let products = document.querySelector(".products");
         products.appendChild(card);
 });
+
