@@ -19,6 +19,7 @@
     border: 1px solid #000;
     display: flex;
     min-height: 50px;
+    justify-content: space-around;
     align-items: center;
     padding-left: 50px;
 }

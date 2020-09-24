@@ -1,4 +1,5 @@
-    const f = (x) => {
+let total = 0;    
+const f = (x) => {
         console.log(x.target.id);
         let i = x.target.id;
         let position = document.createElement("div");
@@ -20,6 +21,9 @@
         console.log(position);
         let cart = document.querySelector(".cart")
         cart.appendChild(position);
+        total += items[i].price;
+        let cartSumm = document.querySelector(".total-summ");
+        cartSumm.innerHTML = total;
     };
 items.forEach(function(item, i) {
         let card = document.createElement("div");
@@ -46,8 +50,9 @@ items.forEach(function(item, i) {
         card.appendChild(p);
         card.appendChild(span);
         card.appendChild(button);
-        console.log(card);
         let products = document.querySelector(".products");
         products.appendChild(card);
 });
+
+
 
