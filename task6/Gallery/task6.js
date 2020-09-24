@@ -8,9 +8,14 @@ const changeImg = (e) => {
     }
 }
 
+const imgError = () => {
+    alert("error");
+}
+
 let images = document.querySelectorAll(".smallImage");
 console.log(images);
 for (i = 0; i < images.length; i++) {
     console.log(images[i]);
     images[i].addEventListener('click', changeImg);
+    images[i].addEventListener('error', imgError);
 }
