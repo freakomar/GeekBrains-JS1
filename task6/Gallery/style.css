@@ -1,0 +1,13 @@
+.gallery {
+    display: flex;
+    margin: 0 auto;
+}
+
+.smallImage {
+    margin: 0 10px;
+}
+
+.bigImage {
+    min-height: 480px;
+    margin: 50px 10px;
+}

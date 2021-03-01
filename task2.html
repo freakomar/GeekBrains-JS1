@@ -1,0 +1,72 @@
+<script>
+    //Задание 1
+    //var a = 1, b = 1, c, d;     
+    //c = ++a; alert(c);         // 2; сначала инкременируется(префиксное) а(равняется 2), потом присваивается с
+    //d = b++; alert(d);         // 1; сначала присваивается, потом инкременируется(постфиксное)
+    //c = (2+ ++a); alert(c);    // 5; а уже равно 2(первая операция), плюс префиксное инкременирование(тог а = 3), соотвествсвенно с = 2 + 3 = 5
+    //d = (2+ b++); alert(d);    // 4; b уже равно 2(вторая операция), но сначало идет сложение, т.е. d = 2 + 2 =4; а потом b увеличивается
+    //alert(a);                  // 3; а увеличилась на первой операции и на 3 еще раз
+    //alert(b);                  // 3; b увеличилась на второй и на четвертой операции
+    
+    //Задание 2
+    //var a = 2;                //а присваивается 2
+    //var x = 1 + (a *= 2)      // х = 1 + (а = а * 2) = 1 + (2 * 2) = 5
+    
+    //Залание 3
+    let a = +prompt('enter 1st number ');
+    let b = +prompt('Enter 2nd number ');
+    if (a >= 0 && b >= 0) {
+        alert(a - b);
+    }
+    else if (a >= 0 || b >= 0) {
+        alert(a * b); 
+    }
+    
+    else {
+        alert(a + b);
+    }
+    
+    //Задание 4
+    let rand = Math.random() * 15;
+    const f = (x) => {
+        if (x <= 15) {
+            console.log(x);
+            f(x+1);
+        }
+        return;
+    }
+    f(Math.round(rand));
+    
+    //Задание 5
+    const sum = (a, b) => {
+        return a + b;
+    };
+    const sub = (a, b) => {
+        return a - b;
+    }
+    const mult = (a, b) => {
+        return a * b;
+    }
+    const div = (a,b) => {
+        if (b === 0) {
+            return 'incorrect b';
+        }
+        return a / b;
+    }
+    
+    //Задание 6
+    const mathOperation = (a, b, oper) => {
+        switch (oper) {
+            case '+': return sum(a,b);
+                    break;
+            case '-': return sub(a,b);
+                    break;
+            case '*': return mult(a,b);
+                    break;
+            case '/': return div(a,b);
+                    break;
+            default: return 'Wrong oper';
+        }
+    };
+    alert(mathOperation(4, 6, '+'));
+</script>

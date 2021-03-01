@@ -1,0 +1,65 @@
+.cart {
+    margin: 0 auto;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    min-height: 100px;
+}
+
+.position {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.name, .price, .cont, .summ {
+    width: 20%;
+}
+
+.total {
+    border: 1px solid #000;
+    display: flex;
+    min-height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.products {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 200px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin: 10px auto;
+    background-color: antiquewhite;
+}
+
+.card-h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.card-img {
+    background-color: bisque;
+    min-height: 150px;
+    width: 100px;
+}
+
+.card-p {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
